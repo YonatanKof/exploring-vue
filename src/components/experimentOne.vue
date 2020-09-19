@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  name: "experimentOne",
+  name: "ExperimentOne",
   props: {
     mainMsg: {
       default: "Hi stranger",
@@ -48,14 +48,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
-body {
-  font-size: 16px;
-  --title-1: 4rem;
-  --title-3: 3rem;
-  --color-caution: red;
-  --color-success: blue;
-}
+<style lang="scss" scoped>
 .kofClass {
   cursor: pointer;
   color: var(--color-success);
