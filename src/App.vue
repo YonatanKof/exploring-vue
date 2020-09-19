@@ -1,19 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/kof-icon.svg">
-    <ChangeCss msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="./assets/kof-icon.svg" />
+    <experimentOne  change-color-msg="Click me to change color" />
   </div>
 </template>
 
 <script>
-import ChangeCss from './components/ChangeCss'
+import experimentOne from "./components/experimentOne.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    ChangeCss
-  }
-}
+    experimentOne,
+  },
+};
 </script>
 
 <style>

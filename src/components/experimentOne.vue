@@ -1,12 +1,12 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1>{{ mainMsg }}</h1>
     <div
       id="change-color"
       v-on:click="dange = !dange"
       v-bind:class="{kofClass: kofClass, dange: dange}"
     >
-      <h3>Hello my love</h3>
+      <h3>{{ changeColorMsg }}</h3>
     </div>
     <div :class="compClasses">
       <button v-on:click="titles = !titles">Toggle Color</button>
@@ -18,9 +18,16 @@
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: "experimentOne",
   props: {
-    msg: String,
+    mainMsg: {
+      default: "Hi stranger",
+      type: String,
+    },
+    changeColorMsg: {
+      default: "Change color here",
+      type: String,
+    },
   },
   data() {
     return {
@@ -44,7 +51,8 @@ export default {
 <style lang="scss">
 body {
   font-size: 16px;
-  --title-3: 4rem;
+  --title-1: 4rem;
+  --title-3: 3rem;
   --color-caution: red;
   --color-success: blue;
 }
@@ -55,11 +63,14 @@ body {
 .dange {
   color: var(--color-caution);
 }
+h1 {
+  font-size: var(--title-1);
+}
 h3 {
   font-weight: 100;
   font-size: var(--title-3);
   margin: 0.25em;
-  transition: font-weight 0.5s, color 1s;
+  transition: font-weight 0.5s, color 0.25s;
 }
 .titles {
   h3 {
