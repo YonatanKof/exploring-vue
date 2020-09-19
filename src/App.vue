@@ -4,7 +4,10 @@
     <KofHr hr-height="2px" hr-margin="1rem"/>
     <ExperimentOne  change-color-msg="Click me to change color" />
     <KofHr hr-height="2px" hr-margin="1rem"/>
-    <ExperimentTwo/>
+    <ExperimentTwo nameish="Gal" job="Cosmic lover" my-strenth="Soft"/>
+    <ExperimentTwo nameish="Chibi" job="Dog" my-strenth="Hard"/>
+    <ExperimentTwo nameish="Luise" job="Cat" my-strenth="Pink"/>
+    <ExperimentTwo />
   </div>
 </template>
 
