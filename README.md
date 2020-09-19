@@ -1,5 +1,6 @@
 # vuecli-i-i-i
 
+> Review the project at [exploring-vue.netlify.app](https://exploring-vue.netlify.app/)
 ## Project setup
 ```
 yarn install
