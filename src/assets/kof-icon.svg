@@ -23,6 +23,6 @@
     }
   </style>
 
-  <use transform-origin="128 128" class="kofff" fill="#595959" href="#Star" />
+  <use transform-origin="128 128" class="kofff" fill="#333" href="#Star" />
   <use x="45" y="20" fill="#E6E6E6" href="#kof-logo" />
 </svg>
