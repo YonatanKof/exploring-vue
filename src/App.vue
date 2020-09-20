@@ -26,7 +26,7 @@
       job="Cat"
       my-strenth="Pink"
       social-link="https://heroicons.com/"
-      my-html='<code style="font-size: 200%; color: red;">Hi there!</code>'
+      my-html="<code style='font-size: 200%; color: red;'>Hi there!</code>"
     />
   </div>
 </template>
@@ -48,7 +48,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 :root {
   font-size: 16px;
   --title-1: 4rem;
@@ -64,5 +64,13 @@ export default {
   text-align: center;
   color: #333;
   margin-top: 60px;
+}
+button {
+  font-size: 0.8rem;
+  padding: 0.7em 0.6em;
+  border-radius: 0.4em;
+  &:not(:first-child) {
+    margin-inline-start: 0.8em;
+  }
 }
 </style>

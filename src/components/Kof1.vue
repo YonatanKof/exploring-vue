@@ -9,8 +9,10 @@
       <h3>{{ changeColorMsg }}</h3>
     </div>
     <div :class="compClasses">
-      <button v-on:click="titles = !titles">Toggle Color</button>
-      <button v-on:click="extraTitles = !extraTitles">Toggle Width</button>
+      <div>
+        <button v-on:click="titles = !titles">Toggle Color</button>
+        <button v-on:click="extraTitles = !extraTitles">Toggle Width</button>
+      </div>
       <h3>Hell yes</h3>
     </div>
   </div>

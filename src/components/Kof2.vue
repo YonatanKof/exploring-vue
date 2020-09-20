@@ -1,7 +1,7 @@
 <template>
   <div class="hiyo">
-    <h1>{{ myKofIs(strenth) }}</h1>
-    <p>Hi {{ name }} the date & time now is {{ date('en-IL') }} and you are a {{ job }}.</p>
+    <h1>{{ myKofIs() }}</h1>
+    <p>Hi {{ nameish }} the date & time now is {{ date('en-IL') }} and you are a {{ job }}.</p>
     <p>
       You can 
       <a target="_blank" v-bind:href="socialLink">find me online here</a>
