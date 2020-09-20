@@ -1,7 +1,12 @@
 <template>
   <div class="hiyo">
-    <h4>{{ myKofIs(strenth) }}</h4>
-    <p>Hi {{ name }} the date & time now is {{ date('en-IL') }} and you are a {{ job }}</p>
+    <h1>{{ myKofIs(strenth) }}</h1>
+    <p>Hi {{ name }} the date & time now is {{ date('en-IL') }} and you are a {{ job }}.</p>
+    <p>
+      You can 
+      <a target="_blank" v-bind:href="socialLink">find me online here</a>
+    </p>
+    <p v-html="myHtml"></p>
   </div>
 </template>
 
@@ -15,7 +20,15 @@ export default {
     },
     job: {
       type: String,
-      default: "a full retard",
+      default: "a Full retard",
+    },
+    socialLink: {
+      type: String,
+      default: "https://exploring-vue.netlify.app/",
+    },
+    myHtml: {
+      type: String,
+      default: 'You can <a target="_blank" href="https://dribbble.com/yonatan_kof" >also find me here</a>',
     },
     myStrenth: {
       type: String,
@@ -24,9 +37,7 @@ export default {
   },
   methods: {
     myKofIs: function () {
-      return (
-        "My Kof is " + this.myStrenth + ", so say's " + this.nameish
-      );
+      return "This is " + this.myStrenth + ", so say's " + this.nameish;
     },
     // myKofIs: function (myStrenth) {
     //   return "My Kof is " + myStrenth + " and he gos by the name of " + this.nameish;
