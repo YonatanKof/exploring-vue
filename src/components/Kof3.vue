@@ -42,10 +42,10 @@ export default {
     },
   },
   methods: {
-    add: function (inc) {
+    add(inc) {
       this.countTwo += inc;
     },
-    remove: function (dec) {
+    remove(dec) {
       this.countTwo -= dec;
     },
     updatePosition: function (event) {
