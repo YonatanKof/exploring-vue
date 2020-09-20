@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  name: "ExperimentOne",
+  name: "Kof1",
   props: {
     mainMsg: {
       default: "Hi stranger",

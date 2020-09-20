@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  name: "ExperimentTwo",
+  name: "Kof2",
   props: {
     nameish: {
       type: String,
