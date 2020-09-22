@@ -24,22 +24,30 @@
 export default {
   name: "Kof3",
   props: {
-    countOne: {
-      type: Number,
-      default: 12,
-    },
-    countTwo: {
-      type: Number,
-      default: 12,
-    },
-    x: {
-      type: Number,
-      default: 300,
-    },
-    y: {
-      type: Number,
-      default: 250,
-    },
+    // countOne: {
+    //   type: Number,
+    //   default: 12,
+    // },
+    // countTwo: {
+    //   type: Number,
+    //   default: 12,
+    // },
+    // x: {
+    //   type: Number,
+    //   default: 300,
+    // },
+    // y: {
+    //   type: Number,
+    //   default: 250,
+    // },
+  },
+  data() {
+    return {
+      countOne: 12,
+      countTwo: 12,
+      x: 300,
+      y: 250,
+    };
   },
   methods: {
     add(inc) {
