@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Kof4 />
     <img alt="Vue logo" src="./assets/kof-icon.svg" />
     <KofHr hr-height="2px" hr-margin="1rem" />
     <Kof1 change-color-msg="Click me to change color" />
@@ -35,6 +36,7 @@
 import Kof1 from "./components/Kof1.vue";
 import Kof2 from "./components/Kof2.vue";
 import Kof3 from "./components/Kof3.vue";
+import Kof4 from "./components/Kof4.vue";
 import KofHr from "./components/KofHr.vue";
 
 export default {
@@ -43,6 +45,7 @@ export default {
     Kof1,
     Kof2,
     Kof3,
+    Kof4,
     KofHr,
   },
 };
