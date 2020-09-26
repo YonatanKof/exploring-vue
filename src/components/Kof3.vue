@@ -1,5 +1,6 @@
 <template>
   <main>
+    <h1>Kof 3</h1>
     <div id="one-way">
       <h3>Count inline: {{ countOne }}</h3>
       <div>

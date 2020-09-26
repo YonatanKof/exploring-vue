@@ -1,9 +1,12 @@
 <template>
   <div class="hiyo">
-    <h1>{{ myKofIs() }}</h1>
-    <p>Hi {{ nameish }} the date & time now is {{ date('en-IL') }} and you are a {{ job }}.</p>
+    <h2>{{ myKofIs() }}</h2>
     <p>
-      You can 
+      Hi {{ nameish }} the date & time now is {{ date("en-IL") }} and you are a
+      {{ job }}.
+    </p>
+    <p>
+      You can
       <a target="_blank" v-bind:href="socialLink">find me online here</a>
     </p>
     <p v-html="myHtml"></p>
@@ -28,7 +31,8 @@ export default {
     },
     myHtml: {
       type: String,
-      default: 'You can <a target="_blank" href="https://dribbble.com/yonatan_kof" >also find me here</a>',
+      default:
+        'You can <a target="_blank" href="https://dribbble.com/yonatan_kof" >also find me here</a>',
     },
     myStrenth: {
       type: String,
@@ -62,6 +66,10 @@ export default {
       theDate = Intl.DateTimeFormat(contry, options).format(theDate);
       return theDate;
     },
+  },
+  data() {
+    return {
+    };
   },
 };
 </script>
