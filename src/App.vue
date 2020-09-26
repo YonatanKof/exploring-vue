@@ -1,11 +1,11 @@
 <template>
-  <div id="app">
+  <main id="app">
     <img alt="Vue logo" src="./assets/kof-icon.svg" />
-    <KofHr hr-height="2px" hr-margin="1rem" />
-    <Kof1 change-color-msg="Click me to change color" />
-    <KofHr hr-height="2px" hr-margin="1rem" />
-    <Kof3 />
-    <KofHr hr-height="2px" hr-margin="1rem" />
+    <KofHr hr-margin="2rem" />
+    <ToDo />
+    <KofHr hr-margin="2rem" hr-color="red" />
+    <Kof1 change-color-msg="Click me to change color" main-msg="Kof me hard in arss"/>
+    <KofHr hr-height="1rem" hr-margin="4rem" hr-color="#d6d6d6" />
     <Kof2 />
     <Kof2
       nameish="Gal"
@@ -28,13 +28,22 @@
       social-link="https://heroicons.com/"
       my-html="<code style='font-size: 200%; color: red;'>Hi there!</code>"
     />
-  </div>
+    <KofHr hr-margin="4rem" />
+    <Kof3 />
+    <KofHr hr-margin="4rem" />
+    <Kof4 />
+    <h1>Kof 2</h1>
+    <Kof5 />
+  </main>
 </template>
 
 <script>
 import Kof1 from "./components/Kof1.vue";
 import Kof2 from "./components/Kof2.vue";
 import Kof3 from "./components/Kof3.vue";
+import Kof4 from "./components/Kof4.vue";
+import Kof5 from "./components/Kof5.vue";
+import ToDo from "./components/ToDo.vue";
 import KofHr from "./components/KofHr.vue";
 
 export default {
@@ -43,6 +52,9 @@ export default {
     Kof1,
     Kof2,
     Kof3,
+    Kof4,
+    Kof5,
+    ToDo,
     KofHr,
   },
 };
@@ -65,12 +77,17 @@ export default {
   color: #333;
   margin-top: 60px;
 }
-button {
+button, input {
   font-size: 0.8rem;
-  padding: 0.7em 0.6em;
+  padding: 0.7em 1em;
   border-radius: 0.4em;
+  border: none;
+  background-color: lightblue;
   &:not(:first-child) {
     margin-inline-start: 0.8em;
   }
+}
+input{
+  background-color: lightgoldenrodyellow;
 }
 </style>

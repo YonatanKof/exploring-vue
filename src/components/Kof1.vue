@@ -1,10 +1,13 @@
 <template>
   <div class="hello">
-    <h1>{{ mainMsg }}</h1>
+    <h1>Kof 1</h1>
+    <h2>{{ mainMsg.toLocaleUpperCase() }}</h2>
+    <h2>{{ reversMainMsg }}</h2>
+    <h2>{{ lengthMainMsg }}</h2>
     <div
       id="change-color"
       v-on:click="dange = !dange"
-      v-bind:class="{kofClass: kofClass, dange: dange}"
+      v-bind:class="{ kofClass: kofClass, dange: dange }"
     >
       <h3>{{ changeColorMsg }}</h3>
     </div>
@@ -45,6 +48,12 @@ export default {
         titles: this.titles,
         extraTitles: this.extraTitles,
       };
+    },
+    reversMainMsg() {
+      return this.mainMsg.split("").reverse().join("");
+    },
+    lengthMainMsg() {
+      return this.mainMsg.toUpperCase();
     },
   },
 };
