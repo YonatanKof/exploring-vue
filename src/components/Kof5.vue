@@ -87,6 +87,9 @@ export default {
   display: flex;
 }
 ul {
+  margin: 0.5em 0;
+  margin-inline-end: 1em;
+  padding: 0;
   color: royalblue;
   text-align: left;
   font-size: 1.2rem;
